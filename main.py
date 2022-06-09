@@ -10,10 +10,11 @@ plt.savefig('img1.png')
 stabilizer.plot_transforms()
 plt.savefig('img2.png')
 
-stabilizer.stabilize(input_path='stable_video.avi', output_path='final_video.avi')
+stabilizer2 = VidStab()
+stabilizer2.stabilize(input_path='stable_video.avi', output_path='final_video.avi')
 
-stabilizer.plot_trajectory()
+stabilizer2.plot_trajectory()
 plt.savefig('img3.png')
 
-stabilizer.plot_transforms()
+stabilizer2.plot_transforms()
 plt.savefig('img4.png')
